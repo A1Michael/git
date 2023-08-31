@@ -1,11 +1,11 @@
 from flask import Flask
 from .views import views_blueprint
 from .auth import authentication_Blueprint
+
 def create_app():
     # initialise app with the name of the file
     app = Flask(__name__)
     app.config['SECRET_KEY'] = 'ThisIsTheKey1010'
-
 
 
     # the prefix is used to access all the urls 
